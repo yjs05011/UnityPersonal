@@ -38,6 +38,7 @@ public class UI_Setting : MonoBehaviour
             timeTextObj.text = $"Time : {Mathf.FloorToInt(surviveTime)} ";
             if(Input.GetKeyDown(KeyCode.R)){
                 SceneManager.LoadScene(SCENE_NAME);
+                gameOverTextObj.SetActive(false);
             }
         }
         
